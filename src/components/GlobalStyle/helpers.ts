@@ -1,0 +1,1 @@
+export const maxMobile = "650px";

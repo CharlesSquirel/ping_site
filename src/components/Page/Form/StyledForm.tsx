@@ -1,18 +1,25 @@
 import styled from "styled-components";
+import { maxMobile } from "../../GlobalStyle/helpers";
 
 export interface InputProps {
-    hasError?: string | false;
-  }
+  hasError?: string | false;
+}
 
 export const StyledForm = styled.form`
   display: flex;
   gap: 16px;
+  @media (max-width: ${maxMobile}) {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+    height: 103px;
+  }
 `;
 
 export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 2px;
 `;
 
 export const ErrorMessage = styled.p`
@@ -28,7 +35,7 @@ export const ErrorMessage = styled.p`
 export const StyledInput = styled.input<InputProps>`
   width: 421px;
   height: 56px;
-  border: 1px solid ${props => (props.hasError ? "var(--red)" : "var(--pale-blue)")};
+  border: 1px solid ${(props) => (props.hasError ? "var(--red)" : "var(--pale-blue)")};
   box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.0001);
   border-radius: 28px;
   outline: 0;
@@ -37,6 +44,12 @@ export const StyledInput = styled.input<InputProps>`
   line-height: 20px;
   padding-left: 30px;
   color: var(--black);
+  @media (max-width: ${maxMobile}) {
+    width: 281px;
+    height: 40px;
+    font-size: 12px;
+    padding-left: 32px;
+  }
   ::placeholder {
     color: #b8c7ed;
   }
@@ -55,6 +68,12 @@ export const StyledButton = styled.button`
   line-height: 19px;
   text-align: center;
   color: var(--white);
+  @media (max-width: ${maxMobile}) {
+    width: 282px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 16px;
+  }
   :hover {
     opacity: 0.6;
   }
