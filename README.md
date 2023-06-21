@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/CharlesSquirel/ping_site)
+- Live Site URL: (https://ping-site-snowy.vercel.app/)
 
 ## My process
 
@@ -43,5 +43,5 @@ Users should be able to:
 
 ## Author
 
-- GitHub - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- GitHub - (https://github.com/CharlesSquirel)
+- Frontend Mentor - (https://www.frontendmentor.io/profile/CharlesSquirel)
